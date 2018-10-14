@@ -1,1 +1,1 @@
-web: gunicorn blav_tech.wsgi --log-file -
+web: gunicorn blav_tech.website.wsgi --log-file -
