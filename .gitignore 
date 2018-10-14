@@ -1,6 +1,6 @@
 .DS_Store
-.vscode 
+.vscode/
 .env
-.blav_tech
-.sqlite 
-__pycache__
+.blav_tech/
+db.sqlite3 
+__pycache__/
