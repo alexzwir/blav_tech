@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,17 +14,17 @@
     <link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!-- FontAwesome JS-->
-    <script type="text/javascript" src="assets/plugins/font-awesome/js/fontawesome-all.min.js"></script>
+    <script type="text/javascript" src="{% static 'assets/plugins/font-awesome/js/fontawesome-all.min.js' %}"></script>
     <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="{% static 'assets/plugins/bootstrap/css/bootstrap.min.css' %}">   
     <!-- Plugins CSS -->    
-    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
-    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
-    <link rel="stylesheet" href="assets/plugins/owl-carousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/plugins/owl-carousel/assets/owl.theme.default.min.css"> 
+    <link rel="stylesheet" href="{% static 'assets/plugins/elegant_font/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/plugins/flexslider/flexslider.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/plugins/owl-carousel/assets/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/plugins/owl-carousel/assets/owl.theme.default.min.css' %}"> 
     
     <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
+    <link id="theme-style" rel="stylesheet" href="{% static 'assets/css/theme-1.css' %}">
 
 </head> 
 
@@ -217,13 +218,13 @@
                         </div><!--//quote-->
                         <div class="meta">
                             <div class="profile">
-                                <img class="img-circle" src="assets/images/client/client-profile-1.png" alt="" />
+                                <img class="img-circle" src="{% static 'assets/images/client/client-profile-1.png' %}" alt="" />
                                 <p class="name">Katherine Hamilton<br />
                                     <span class="source-title">Product Manager</span>
                                 </p>
                             </div><!--//profile-->
                             <div class="client-logo">
-                                <img class="img-fluid" src="assets/images/client/client-logo-1.png" alt="" />
+                                <img class="img-fluid" src="{% static 'assets/images/client/client-logo-1.png' %}" alt="" />
                             </div><!--//client-logo-->
                         </div><!--//meta-->        
                     </div><!--//item-inner-->        
@@ -238,13 +239,13 @@
                         </div><!--//quote-->
                         <div class="meta">
                             <div class="profile">
-                                <img class="img-circle" src="assets/images/client/client-profile-2.png" alt="" />
+                                <img class="img-circle" src="{% static 'assets/images/client/client-profile-2.png' %}" alt="" />
                                 <p class="name">Aaron Brown<br />
                                     <span class="source-title">Marketing Director</span>
                                 </p>
                             </div><!--//profile-->
                             <div class="client-logo">
-                                <img class="img-fluid" src="assets/images/client/client-logo-2.png" alt="" />
+                                <img class="img-fluid" src="{% static 'assets/images/client/client-logo-2.png' %}" alt="" />
                             </div><!--//client-logo-->
                         </div><!--//meta-->     
                     </div><!--//item-inner-->           
@@ -261,13 +262,13 @@
                         </div><!--//quote-->
                         <div class="meta">
                             <div class="profile">
-                                <img class="img-circle" src="assets/images/client/client-profile-3.png" alt="" />
+                                <img class="img-circle" src="{% static 'assets/images/client/client-profile-3.png' %}" alt="" />
                                 <p class="name">Phillip Perry<br />
                                     <span class="source-title">Product Manager</span>
                                 </p>
                             </div><!--//profile-->
                             <div class="client-logo">
-                                <img class="img-fluid" src="assets/images/client/client-logo-3.png" alt="" />
+                                <img class="img-fluid" src="{% static 'assets/images/client/client-logo-3.png' %}" alt="" />
                             </div><!--//client-logo-->
                         </div><!--//meta-->  
                     </div><!--//item-inner-->              
@@ -282,13 +283,13 @@
                         </div><!--//quote-->
                         <div class="meta">
                             <div class="profile">
-                                <img class="img-circle" src="assets/images/client/client-profile-4.png" alt="" />
+                                <img class="img-circle" src="{% static 'assets/images/client/client-profile-4.png' %}" alt="" />
                                 <p class="name">Victoria Simmons<br />
                                     <span class="source-title">Product Designer</span>
                                 </p>
                             </div><!--//profile-->
                             <div class="client-logo">
-                                <img class="img-fluid" src="assets/images/client/client-logo-4.png" alt="" />
+                                <img class="img-fluid" src="{% static 'assets/images/client/client-logo-4.png' %}" alt="" />
                             </div><!--//client-logo-->
                         </div><!--//meta-->  
                     </div><!--//item-inner-->              
@@ -303,16 +304,16 @@
             <h2 class="title">Who we have worked with</h2>
             <p class="intro">SaaS / Mobile apps / Marketing sites / Internal apps</p>
             <ul class="logo-list list-inline row">
-                <li class="col-md-3 col-6"><a href="#"><img class="img-fluid" src="assets/images/logos/logo-1.png" alt="" /></a></li>
-                <li class="col-md-3 col-6"><a href="#"><img class="img-fluid" src="assets/images/logos/logo-2.png" alt="" /></a></li>
-                <li class="col-md-3 col-6"><a href="#"><img class="img-fluid" src="assets/images/logos/logo-3.png" alt="" /></a></li>                   
-                <li class="col-md-3 col-6"><a href="#"><img class="img-fluid" src="assets/images/logos/logo-4.png" alt="" /></a></li> 
+                <li class="col-md-3 col-6"><a href="#"><img class="img-fluid" src="{% static 'assets/images/logos/logo-1.png' %}" alt="" /></a></li>
+                <li class="col-md-3 col-6"><a href="#"><img class="img-fluid" src="{% static 'assets/images/logos/logo-2.png' %}" alt="" /></a></li>
+                <li class="col-md-3 col-6"><a href="#"><img class="img-fluid" src="{% static 'assets/images/logos/logo-3.png' %}" alt="" /></a></li>                   
+                <li class="col-md-3 col-6"><a href="#"><img class="img-fluid" src="{% static 'assets/images/logos/logo-4.png' %}" alt="" /></a></li> 
             </ul><!--//logo-list-->
             <ul class="logo-list list-inline row last">
-                <li class="col-md-3 col-6"><a href="#"><img class="img-fluid" src="assets/images/logos/logo-5.png" alt="" /></a></li>
-                <li class="col-md-3 col-6"><a href="#"><img class="img-fluid" src="assets/images/logos/logo-6.png" alt="" /></a></li>
-                <li class="col-md-3 col-6"><a href="#"><img class="img-fluid" src="assets/images/logos/logo-7.png" alt="" /></a></li>                   
-                <li class="col-md-3 col-6"><a href="#"><img class="img-fluid" src="assets/images/logos/logo-8.png" alt="" /></a></li>                   
+                <li class="col-md-3 col-6"><a href="#"><img class="img-fluid" src="{% static 'assets/images/logos/logo-5.png' %}" alt="" /></a></li>
+                <li class="col-md-3 col-6"><a href="#"><img class="img-fluid" src="{% static 'assets/images/logos/logo-6.png' %}" alt="" /></a></li>
+                <li class="col-md-3 col-6"><a href="#"><img class="img-fluid" src="{% static 'assets/images/logos/logo-7.png' %}" alt="" /></a></li>                   
+                <li class="col-md-3 col-6"><a href="#"><img class="img-fluid" src="{% static 'assets/images/logos/logo-8.png' %}" alt="" /></a></li>                   
             </ul><!--//logos-list-->               
         </div><!--//container-->
     </section><!--//logos-->
@@ -340,7 +341,7 @@
                 <div class="item col-md-6 col-12">
                     <div class="item-inner">
                         <figure class="figure">
-                            <a href="blog-post.html"><img class="img-fluid" src="assets/images/blog/blog-thumb-1.jpg" alt="" /></a>
+                            <a href="blog-post.html"><img class="img-fluid" src="{% static 'assets/images/blog/blog-thumb-1.jpg' %}" alt="" /></a>
                         </figure>
                         <div class="content-wrapper text-center">
                             <h3 class="sub-title"><a href="blog-post.html">DevStudio helps XYZ launch</a></h3>
@@ -354,7 +355,7 @@
                 <div class="item col-md-6 col-12">
                     <div class="item-inner">
                         <figure class="figure">
-                            <a href="blog-post.html"><img class="img-fluid" src="assets/images/blog/blog-thumb-2.jpg" alt="" /></a>
+                            <a href="blog-post.html"><img class="img-fluid" src="{% static 'assets/images/blog/blog-thumb-2.jpg' %}" alt="" /></a>
                         </figure>
                         <div class="content-wrapper text-center">
                             <h3 class="sub-title"><a href="blog-post.html">devAid - Free Bootstrap Theme</a></h3>
@@ -368,7 +369,7 @@
                 <div class="item col-md-6 col-12">
                     <div class="item-inner">
                         <figure class="figure">
-                            <a href="blog-post.html"><img class="img-fluid"  src="assets/images/blog/blog-thumb-3.jpg" alt="" /></a>
+                            <a href="blog-post.html"><img class="img-fluid"  src="{% static 'assets/images/blog/blog-thumb-3.jpg' %}" alt="" /></a>
                         </figure>
                         <div class="content-wrapper text-center">
                             <h3 class="sub-title"><a href="blog-post.html">DevStudio Team Lorem Ipsum</a></h3>
@@ -381,7 +382,7 @@
                 <div class="item col-md-6 col-12">
                     <div class="item-inner">
                         <figure class="figure">
-                            <a href="blog-post.html"><img class="img-fluid" src="assets/images/blog/blog-thumb-4.jpg" alt="" /></a>
+                            <a href="blog-post.html"><img class="img-fluid" src="{% static 'assets/images/blog/blog-thumb-4.jpg' %}" alt="" /></a>
                         </figure>
                         <div class="content-wrapper text-center">
                             <h3 class="sub-title"><a href="blog-post.html">Our Consectetur Adipiscing</a></h3>
@@ -418,7 +419,7 @@
                             <h3 class="sub-title">Latest From Our Blog</h3>
                             <div class="item">
                                 <figure class="figure">
-                                    <img class="img-fluid" src="assets/images/blog/blog-tiny-thumb-1.jpg" alt="" />
+                                    <img class="img-fluid" src="{% static 'assets/images/blog/blog-tiny-thumb-1.jpg' %}" alt="" />
                                 </figure>
                                 <div class="content">
                                     <h4 class="post-title"><a href="blog-post.html">DevStudio helps XYZ launch</a></h4>
@@ -431,7 +432,7 @@
                             </div>  
                             <div class="item">
                                 <figure class="figure">
-                                    <img class="img-fluid" src="assets/images/blog/blog-tiny-thumb-2.jpg" alt="" />
+                                    <img class="img-fluid" src="{% static 'assets/images/blog/blog-tiny-thumb-2.jpg' %}" alt="" />
                                 </figure>
                                 <div class="content">
                                     <h4 class="post-title"><a href="blog-post.html">devAid - Free Bootstrap Theme</a></h4>
@@ -548,31 +549,31 @@
     </div><!--//config-wrapper-->
  
     <!-- Main Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
-    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>                                                                            
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="{% static 'assets/plugins/jquery-3.3.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/plugins/popper.min.js' %}"></script> 
+    <script type="text/javascript" src="{% static 'assets/plugins/bootstrap/js/bootstrap.min.js' %}"></script> 
+    <script type="text/javascript" src="{% static 'assets/plugins/back-to-top.js' %}"></script>                                                                            
+    <script type="text/javascript" src="{% static 'assets/js/main.js' %}"></script>
     
     <!-- Flexslider -->    
-    <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script> 
-    <script type="text/javascript" src="assets/js/flexslider-custom.js"></script>     
+    <script type="text/javascript" src="{% static 'assets/plugins/flexslider/jquery.flexslider-min.js' %}"></script> 
+    <script type="text/javascript" src="{% static 'assets/js/flexslider-custom.js' %}"></script>     
     
     <!-- Form Validation -->
-    <script type="text/javascript" src="assets/plugins/jquery.validate.min.js"></script> 
-    <script type="text/javascript" src="assets/js/form-validation-custom.js"></script>
+    <script type="text/javascript" src="{% static 'assets/plugins/jquery.validate.min.js' %}"></script> 
+    <script type="text/javascript" src="{% static 'assets/js/form-validation-custom.js' %}"></script>
     
     <!-- Form iOS fix -->
-    <script type="text/javascript" src="assets/plugins/isMobile/isMobile.min.js"></script>
-    <script type="text/javascript" src="assets/js/form-mobile-fix.js"></script>
+    <script type="text/javascript" src="{% static 'assets/plugins/isMobile/isMobile.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'assets/js/form-mobile-fix.js' %}"></script>
     
     <!-- Owl Carousel -->
-    <script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.min.js"></script> 
-    <script type="text/javascript" src="assets/js/owl-custom.js"></script> 
+    <script type="text/javascript" src="{% static 'assets/plugins/owl-carousel/owl.carousel.min.js' %}"></script> 
+    <script type="text/javascript" src="{% static 'assets/js/owl-custom.js' %}"></script> 
     
     
     <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
-    <script src="assets/js/demo/style-switcher.js"></script>
+    <script src="{% static 'assets/js/demo/style-switcher.js' %}"></script>
     
 </body>
 </html> 
