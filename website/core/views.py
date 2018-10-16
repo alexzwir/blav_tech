@@ -8,3 +8,6 @@ def home(request):
 
 def work(request):
     return render(request,"nossotrabalho.html",{})
+
+def aboutus(request):
+    return render(request,"sobrenos.html",{})
