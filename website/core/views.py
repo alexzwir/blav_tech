@@ -11,3 +11,6 @@ def work(request):
 
 def aboutus(request):
     return render(request,"sobrenos.html",{})
+
+def blog(request):
+    return render(request,"blog.html",{})
