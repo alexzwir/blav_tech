@@ -7,4 +7,4 @@ def home(request):
     return render(request,"index.html",{})
 
 def work(request):
-    return render(request,"nossostrabalhos.html",{})
+    return render(request,"nossotrabalho.html",{})
