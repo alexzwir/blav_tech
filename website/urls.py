@@ -23,5 +23,6 @@ urlpatterns = [
     path('nossotrabalho.html', views.work,name="work"),
     path('sobrenos.html', views.aboutus,name="aboutus"),
     path('blog.html', views.blog,name="blog"),
+    path('contato.html', views.contact,name="contact"),
     
 ]
