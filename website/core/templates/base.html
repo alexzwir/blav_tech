@@ -1,9 +1,9 @@
 {% load staticfiles %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <title>Responsive website template for web design &amp; development agencies</title>
+    <title>Blav Tech - Empresa de desenvolvimento de software &amp; web design</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,7 +35,7 @@
         <header id="header" class="header fixed-top">  
             <div class="container">       
                 <h1 class="logo">
-                    <a href="index.html"><span class="highlight">Dev</span>Studio</a>
+                    <a href="/"><span class="highlight">Blav</span>Tech</a>
                 </h1><!--//logo-->
                 <nav class="main-nav navbar navbar-expand-md navbar-dark" role="navigation">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,17 +43,18 @@
                     </button>
                     <div id="navbar-collapse" class="navbar-collapse collapse justify-content-end">
                         <ul class="nav navbar-nav">
-                            <li class="active nav-item"><a class="nav-link" href="">Home</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="nossotrabalho.html">Nosso trabalho <i class="fas fa-angle-down"></i></a>
-                                <div class="dropdown-menu dropdown-menu-right">
+                            <li class="active nav-item"><a class="nav-link" href="/">Home</a></li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="nossotrabalho.html">Nosso trabalho<i class="fas fa-angle-down"></i></a> -->
+                                <!-- <div class="dropdown-menu dropdown-menu-right">
                                     <a class="dropdown-item" href="nossotrabalho.html">Nossos trabalhos</a>
-                                    <a class="dropdown-item" href="case-study-1.html">Single Case Study 1</a>
-                                    <a class="dropdown-item" href="case-study-2.html">Single Case Study 2</a>
+                                    <a class="dropdown-item" href="case-study-1.html">Single Case Study 1</a> 
+                                    <a class="dropdown-item" href="case-study-2.html">Single Case Study 2</a> 
                                     <a class="dropdown-item" href="blog-post.html">Single Blog Post</a>
-                                    <a class="dropdown-item" href="404.html">404 Page</a>           
-                                </div>
-                            </li><!--//dropdown--> 
+                                    <a class="dropdown-item" href="404.html">404 Page</a>    
+                                </div> -->
+                            <!-- </li>//dropdown  -->
+                            <li class="nav-item"><a class="nav-link" href="nossotrabalho.html">Nosso trabalho</a></li>
                             <li class="nav-item"><a class="nav-link" href="sobrenos.html">Sobre Nós</a></li>                                              
                             <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                             <li class="nav-item last"><a class="nav-link" href="contato.html">Contato</a></li>
@@ -62,7 +63,6 @@
                 </nav><!--//main-nav-->
             </div><!--//container-->
         </header><!--//header-->  
-
 
         {% block content %}
 
@@ -76,18 +76,18 @@
                     <div class="footer-col-inner">
                         <h3 class="sub-title">Quick Links</h3>
                         <ul class="list-unstyled">
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="work.html">Our work</a></li>
-                            <li><a href="contact.html">Contact</a></li>                                
+                            <li><a href="sobrenos.html">Sobre nós</a></li>
+                            <li><a href="nossotrabalho.html">Nosso trabalho</a></li>
+                            <li><a href="contato.html">Contato</a></li>                                
                             <li><a href="blog.html">Blog</a></li>
-                            <li><a href="#">Privacy policy</a></li>
-                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Política de privacidade</a></li>
+                            <li><a href="#">Termos &amp; Condições</a></li>
                         </ul>
                     </div><!--//footer-col-inner-->
                 </div><!--//foooter-col-->
                 <div class="footer-col col-lg-6 col-md-8 col-12 blog-col">
                     <div class="footer-col-inner">
-                        <h3 class="sub-title">Latest From Our Blog</h3>
+                        <h3 class="sub-title">Últimas noticias sobre nosso blog.</h3>
                         <div class="item">
                             <figure class="figure">
                                 <img class="img-fluid" src="{% static 'assets/images/blog/blog-tiny-thumb-1.jpg' %}" alt="" />
