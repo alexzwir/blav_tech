@@ -8,7 +8,7 @@ from django import forms
 
 class ContactModel(models.Model):
     contact_name = models.CharField(max_length=50)
-    contact_email = models.CharField(widget=forms.EmailInput, max_length=30)
+    contact_email = models.CharField(max_length=30)
     contact_phone = models.CharField(max_length=30)
     contact_sent_date = models.CharField(max_length=35,default=timezone.now)
     contact_message = models.CharField(max_length=50)
