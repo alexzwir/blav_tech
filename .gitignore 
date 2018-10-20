@@ -4,3 +4,4 @@
 .blav_tech/
 db.sqlite3
 *__pycache__/
+website/__pycache__/
