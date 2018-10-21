@@ -9,19 +9,23 @@
             <h2 class="title text-center">Comece seu Projeto Hoje!</h2>
             <p class="intro text-center">Temos anos de experiência para ajudar na construção do seu negócio, suportando todas as decisões tecnológicas. Desde criação e desenvolvimento de sites até projetos customizados. Não perca tempo, tire sua idéia do papel!</p>
             <ul class="contact-info list-inline text-center">
-                <li class="tel list-inline-item"><span class="fs1" aria-hidden="true" data-icon="&#x77;"></span><br /> <a href="+5511985824810">(11)9.8582-4810 - Whatsapp Icon</a></li>
-                <li class="tel list-inline-item"><span class="fs1" aria-hidden="true" data-icon="&#x77;"></span><br /> <a href="+5511985824810">Whatsapp Icon</a></li>
+                <li class="tel list-inline-item"><span class="fs1" aria-hidden="true" data-icon="&#x77;"></span><br /> <a href="+5511985824810">(11)9.8582-4810</a></li>
+                
                 <li class="email list-inline-item"><span class="fs1" aria-hidden="true" data-icon="&#xe010;"></span><br /> <a href="#">contato@blav.tech</a></li>
             </ul>
-            <form id="contact-form" class="contact-form form" method="post" action="#">                    
+            <!-- <form id="contact-form" class="contact-form form" method="post" action="#">                    
                 <div class="row text-center">
                     <div class="contact-form-inner col-lg-8 col-12 mr-lg-auto ml-lg-auto">
                         <div class="row">                                                                                       
-                            <div class="col-md-6 col-12 form-group">
+                            <div class="col-md-4 col-12 form-group">
                                 <label class="sr-only" for="cname">Nome</label>
                                 <input type="text" class="form-control" id="cname" name="name" placeholder="Nome" minlength="2" required>
                             </div>                    
-                            <div class="col-md-6 col-12 form-group">
+                            <div class="col-md-4 col-12 form-group">
+                                <label class="sr-only" for="cemail">Email</label>
+                                <input type="email" class="form-control" id="cemail" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="col-md-4 col-12 form-group">
                                 <label class="sr-only" for="cemail">Email</label>
                                 <input type="email" class="form-control" id="cemail" name="email" placeholder="Email" required>
                             </div>
@@ -32,15 +36,39 @@
                              <div class="col-12 form-group">
                                 <button type="submit" class="btn btn-block btn-cta btn-cta-primary">Enviar</button>
                             </div>                           
-                        </div><!--//row-->
-                    </div>
-                </div><!--//row-->
-                <div id="form-messages"></div>
-            </form><!--//contact-form-->
+                        </div>//row -->
+                    <!-- </div> -->
+                <!-- </div>//row -->
+                <!-- <div id="form-messages"></div> --> 
+            <!-- </form>//contact-form -->
             <form action="/saving_contact" method="POST">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit">Enviar</button>
+                <div class="row text-center">
+                    <div class="contact-form-inner col-lg-8 col-12 mr-lg-auto ml-lg-auto">
+                        <div class="row">   
+                            {% csrf_token %}
+                            <div class="col-md-4 col-12 form-group">
+                                <label class="sr-only" for="cname">Nome</label>
+                                {{ form.contact_name }}
+                            </div>         
+                            <div class="col-md-4 col-12 form-group">
+                                <label class="sr-only" for="cname">Nome</label>
+                                {{ form.contact_email }}
+                            </div>   
+                            <div class="col-md-4 col-12 form-group">
+                                <label class="sr-only" for="cname">Nome</label>
+                                {{ form.contact_phone }}
+                            </div>   
+                            <div class="col-12 form-group">
+                                <label class="sr-only" for="cmessage">Mensagem</label>
+                                {{ form.contact_message }}
+                            </div>
+                            <!-- {{ form.as_p }} -->
+                            <div class="col-12 form-group">
+                                <button class="btn btn-block btn-cta btn-cta-primary" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
 
         </div><!--//container-->
