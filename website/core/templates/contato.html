@@ -37,9 +37,11 @@
                 </div><!--//row-->
                 <div id="form-messages"></div>
             </form><!--//contact-form-->
-            <form action=""
-                
-            ></form>
+            <form action="/saving_contact" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Enviar</button>
+            </form>
 
         </div><!--//container-->
     </section><!--//contact-section-->

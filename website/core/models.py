@@ -14,5 +14,5 @@ class ContactModel(models.Model):
         verbose_name_plural = "Contatos"
 
     def __str__(self):
-        return smart_text("{} | {}".format(self.contact_name,self.contact_email))
+        return smart_text("{} | {} | {}".format(self.contact_name,self.contact_email,self.contact_sent_date))
 

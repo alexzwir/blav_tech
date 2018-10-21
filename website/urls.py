@@ -24,5 +24,6 @@ urlpatterns = [
     path('sobrenos.html', views.aboutus,name="aboutus"),
     path('blog.html', views.blog,name="blog"),
     path('contato.html', views.contact,name="contact"),
+    path('saving_contact', views.saving_contact,name="saving_contact"),
     
 ]
